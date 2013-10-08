@@ -1,15 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://poren.tw/blog/archives/</loc>
-        <lastmod>2013-10-09T01:35:25+08:00</lastmod>
+        <loc>http://blog.poren.tw/2013/10/09/new-but-familiar/</loc>
+        <lastmod>2013-10-09T03:44:57+08:00</lastmod>
     </url>
     <url>
-        <loc>http://poren.tw/</loc>
-        <lastmod>2013-10-09T01:35:25+08:00</lastmod>
+        <loc>http://blog.poren.tw/archives/</loc>
+        <lastmod>2013-10-09T03:44:57+08:00</lastmod>
     </url>
     <url>
-        <loc>http://poren.tw/robots.txt</loc>
+        <loc>http://blog.poren.tw/</loc>
+        <lastmod>2013-10-09T03:44:57+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://blog.poren.tw/robots.txt</loc>
         <lastmod>2013-10-09T01:35:25+08:00</lastmod>
     </url>
 </urlset>

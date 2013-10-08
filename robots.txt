@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://poren.tw/sitemap.xml 
+Sitemap: http://blog.poren.tw/sitemap.xml 

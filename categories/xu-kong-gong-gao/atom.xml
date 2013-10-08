@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[任任的藍色虛空]]></title>
-  <link href="http://blog.poren.tw/atom.xml" rel="self"/>
+
+  <title><![CDATA[Category: 虛空公告 | 任任的藍色虛空]]></title>
+  <link href="http://blog.poren.tw/categories/xu-kong-gong-gao/atom.xml" rel="self"/>
   <link href="http://blog.poren.tw/"/>
   <updated>2013-10-09T03:46:04+08:00</updated>
   <id>http://blog.poren.tw/</id>
