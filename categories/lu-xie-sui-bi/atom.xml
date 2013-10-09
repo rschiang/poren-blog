@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 綠葉隨筆 | 任任的藍色虛空]]></title>
+  <link href="http://blog.poren.tw/categories/lu-xie-sui-bi/atom.xml" rel="self"/>
+  <link href="http://blog.poren.tw/"/>
+  <updated>2013-10-09T12:22:03+08:00</updated>
+  <id>http://blog.poren.tw/</id>
+  <author>
+    <name><![CDATA[Poren Chiang]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[試解《尚柏雜筆》]]></title>
+    <link href="http://blog.poren.tw/2013/05/19/an-experimental-approach-to-shang-bo-tsa-bi/"/>
+    <updated>2013-05-19T00:00:00+08:00</updated>
+    <id>http://blog.poren.tw/2013/05/19/an-experimental-approach-to-shang-bo-tsa-bi</id>
+    <content type="html"><![CDATA[<blockquote><p>「勢北空潭陣雨新，城南蟬翼重千鈞。但得煙燈能比日，枉歲天相登桓庭。」―〈尚柏雜筆‧五月十八夜霽〉</p></blockquote>
+
+<h5>【語譯】</h5>
+
+<p>陣雨滌淨了碧潭以及順流而下的新店溪<sup>(1)</sup>，繁華的城南以蟬翼重於千鈞。夜裡萬戶燈火，市井點起的煙燈，明亮得幾乎能與太陽相比。枉費歲時輪替了，五月的此刻，本該天相星當臨夜空的。</p>
+
+<p><sup>(1)</sup>為北勢溪之下游。</div></p>
+]]></content>
+  </entry>
+  
+</feed>
