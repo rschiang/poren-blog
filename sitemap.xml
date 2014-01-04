@@ -2,7 +2,7 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://blog.poren.tw/2010/09/21/weaving-the-fallnight/</loc>
-        <lastmod>2013-10-26T00:14:50+08:00</lastmod>
+        <lastmod>2014-01-04T22:56:54+08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.poren.tw/2010/10/13/tracing-the-past/</loc>
@@ -10,7 +10,7 @@
     </url>
     <url>
         <loc>http://blog.poren.tw/2011/02/23/a-hundred-years-of-solitude/</loc>
-        <lastmod>2013-10-13T23:12:49+08:00</lastmod>
+        <lastmod>2014-01-04T22:56:40+08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.poren.tw/2011/02/24/destruction-and-regeneration/</loc>
@@ -18,7 +18,7 @@
     </url>
     <url>
         <loc>http://blog.poren.tw/2011/09/13/another-whitedew/</loc>
-        <lastmod>2013-10-13T23:12:49+08:00</lastmod>
+        <lastmod>2014-01-04T22:57:29+08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.poren.tw/2012/01/04/seventeenth/</loc>
@@ -93,12 +93,16 @@
         <lastmod>2013-12-29T17:33:03+08:00</lastmod>
     </url>
     <url>
+        <loc>http://blog.poren.tw/2014/01/04/nineteenth/</loc>
+        <lastmod>2014-01-04T23:55:24+08:00</lastmod>
+    </url>
+    <url>
         <loc>http://blog.poren.tw/archives/</loc>
-        <lastmod>2013-12-29T17:33:03+08:00</lastmod>
+        <lastmod>2014-01-04T23:55:24+08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.poren.tw/</loc>
-        <lastmod>2013-12-29T17:33:03+08:00</lastmod>
+        <lastmod>2014-01-04T23:55:24+08:00</lastmod>
     </url>
     <url>
         <loc>http://blog.poren.tw/robots.txt</loc>
