@@ -6,7 +6,7 @@ AUTHOR = u'Poren Chiang'
 SITENAME = u'\u4efb\u4efb\u7684\u85cd\u8272\u865b\u7a7a'
 SITEURL = ''
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'Asia/Taipei'
 
 DEFAULT_LANG = u'zh'
 

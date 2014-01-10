@@ -13,12 +13,12 @@ from pelicanconf import *
 SITEURL = 'http://blog.poren.tw'
 RELATIVE_URLS = False
 
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
+FEED_ALL_ATOM = 'atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
 
-#DISQUS_SITENAME = ""
-#GOOGLE_ANALYTICS = ""
+DISQUS_SITENAME = "bluenowhere"
+GOOGLE_ANALYTICS = "UA-43262969-2"
