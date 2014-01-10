@@ -35,21 +35,22 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 # Blogroll
-GITHUB_URL = 'https://github.com/rschiang'
-LINKS =  (('Pelican', 'http://getpelican.com/'),
-          ('Python.org', 'http://python.org/'),
-          ('Jinja2', 'http://jinja.pocoo.org/'),
-          ('You can modify those links in your config file', '#'),)
+MENUITEMS = (
+	('部落格', SITEURL + '/'),
+	('封存', SITEURL + ARCHIVES_URL),
+	('關於我', 'http://poren.tw'),
+)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+GITHUB_URL = 'https://github.com/rschiang'
 
 DEFAULT_PAGINATION = 5
 PAGINATION_PATTERNS = (
 	(1, '{base_name}/', '{base_name}/index.html'),
 	(2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),
 )
+
+THEME = 'theme/borealis'
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
