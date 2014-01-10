@@ -3,12 +3,31 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Poren Chiang'
-SITENAME = u'\u4efb\u4efb\u7684\u85cd\u8272\u865b\u7a7a'
+SITENAME = u'任任的藍色虛空'
+SITESUBTITLE = '漫思於粼粼極光'
 SITEURL = ''
 
 TIMEZONE = 'Asia/Taipei'
+DEFAULT_DATE_FORMAT = '%Y/%m/%d'
 
 DEFAULT_LANG = u'zh'
+LOCALE = 'zh_TW'
+
+DISPLAY_CATEGORIES_ON_MENU = False
+
+FILENAME_METADATA = r'(?P<date>\d{4}-\d{2}-\d{2})\s(?P<slug>.*)'
+
+# URL settings
+ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}/'
+ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+ARTICLE_LANG_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}/{lang}/'
+ARTICLE_LANG_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/{slug}/{lang}/index.html'
+CATEGORY_URL = 'category/{slug}/'
+CATEGORY_SAVE_AS = 'category/{slug}/index.html'
+ARCHIVES_URL = 'archives/'
+ARCHIVES_SAVE_AS = 'archives/index.html'
+AUTHORS_URL = 'author/'
+AUTHORS_SAVE_AS = False
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -16,6 +35,7 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 # Blogroll
+GITHUB_URL = 'https://github.com/rschiang'
 LINKS =  (('Pelican', 'http://getpelican.com/'),
           ('Python.org', 'http://python.org/'),
           ('Jinja2', 'http://jinja.pocoo.org/'),
@@ -26,6 +46,11 @@ SOCIAL = (('You can add links in your config file', '#'),
           ('Another social link', '#'),)
 
 DEFAULT_PAGINATION = 5
+PAGINATION_PATTERNS = (
+	(1, '{base_name}/', '{base_name}/index.html'),
+	(2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),
+)
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+

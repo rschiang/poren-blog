@@ -13,8 +13,9 @@ from pelicanconf import *
 SITEURL = 'http://blog.poren.tw'
 RELATIVE_URLS = False
 
+FEED_DOMAIN = SITEURL
 FEED_ALL_ATOM = 'atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
+CATEGORY_FEED_ATOM = 'category/%s/atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
 
