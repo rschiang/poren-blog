@@ -6,7 +6,7 @@
     <header>
       <h1 class="entry-title">
         <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
-           title="Permalink to {{ article.title|striptags }}">{{ article.title}}</a></h1>
+           title="{{ article.title|striptags }}的永久連結">{{ article.title }}</a></h1>
       {% include 'twitter.html' %}
     </header>
 
@@ -16,7 +16,7 @@
     </div><!-- /.entry-content -->
     {% if DISQUS_SITENAME and SITEURL and article.status != "draft" %}
     <div class="comments">
-      <h2>Comments !</h2>
+      <h2>留言 !</h2>
       <div id="disqus_thread"></div>
       <script type="text/javascript">
         var disqus_identifier = "{{ article.url }}";
