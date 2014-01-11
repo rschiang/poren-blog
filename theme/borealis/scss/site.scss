@@ -53,3 +53,9 @@ $large: $large-width $large-columns;
 		@include span-columns-fluid(4 omega, 5 omega);
 	}
 }
+
+article.post-entry {
+	.readmore:after {
+		content: " »";
+	}
+}

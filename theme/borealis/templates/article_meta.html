@@ -1,0 +1,21 @@
+<footer class="entry-meta">
+<ul>
+	<li class="info">
+		{% if article.author %}
+		<a class="entry-author url" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
+		{% endif %}
+		@ <span class="time">{{ article.date|strftime('%H:%M') }}</span>
+	</li>
+	<li class="category">
+		<a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+	</li>
+	{% if PDF_PROCESSOR %}
+	<li class="link">
+		<a href="{{ SITEURL }}/pdf/{{ article.slug }}.pdf">下載 PDF</a>
+	</li>
+	{% endif %}
+	{% include 'taglist.html' %}
+	{% import 'translations.html' as translations with context %}
+	{{ translations.translations_for(article) }}
+</ul>
+</footer>
