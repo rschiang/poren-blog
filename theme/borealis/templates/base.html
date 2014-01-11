@@ -25,10 +25,15 @@
 	<![endif]-->
 </head>
 
-<body id="index" class="home">
+<body>
 {% include 'github.html' %}
-	<header id="banner" class="body">
-		<h1><a href="{{ SITEURL }}/">{{ SITENAME }} {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a></h1>
+
+<div class="page">
+	<header>
+		<div class="logo">
+			<h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
+			{% if SITESUBTITLE %}<h2>{{ SITESUBTITLE }}</h2>{% endif %}
+		</div>
 		<nav><ul>
 		{% for title, link in MENUITEMS %}
 		    <li><a href="{{ link }}">{{ title }}</a></li>
@@ -44,10 +49,10 @@
 		{% endfor %}
 		{% endif %}
 		</ul></nav>
-	</header><!-- /#banner -->
+	</header>
 	{% block content %}
 	{% endblock %}
-	<section id="extras" class="body">
+	<section class="extras">
 	{% if LINKS %}
 		<div class="blogroll">
 			<h2>交換連結</h2>
@@ -77,9 +82,10 @@
 	{% endif %}
 	</section><!-- /#extras -->
 
-	<footer id="contentinfo" class="body">
+	<footer>
 	   © {{ AUTHOR }} {{ COPYTEXT }}
 	</footer><!-- /#contentinfo -->
+</div>
 
 {% include 'analytics.html' %}
 {% include 'piwik.html' %}
