@@ -7,6 +7,13 @@
 // Declare body font
 @import "fonts";
 
+$text-color: #222;
+$accent-color: #d8384a;
+$subaccent-color: #e40f3f;
+
+a, a:visited { color: $accent-color; }
+a:hover, a:active { color: lighten($accent-color, 10%); }
+
 .page {
 	@include container($total-columns, $medium, $large);
 
@@ -18,6 +25,7 @@
 
 .page > header {
 	@include span-row;
+	padding: 1em 0;
 
 	.logo {
 		@include span-columns-fluid(4, 7);
@@ -25,6 +33,22 @@
 
 	nav {
 		@include span-columns-fluid(4 omega, 5 omega);
+		ul {
+			@import "compass/typography/lists/inline-block-list";
+			@include inline-block-list;
+			
+			li { width: 25%; }
+
+			a {
+				display: block;
+				width: 100%;
+				font-size: 1.17rem;	// heading 3
+				text-align: center;
+				text-decoration: none;
+			}
+
+			.active a { color: $text-color; }
+		}
 	}
 }
 
