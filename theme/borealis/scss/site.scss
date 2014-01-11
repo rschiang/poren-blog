@@ -7,12 +7,11 @@
 // Declare body font
 @import "fonts";
 
+// Use IcoMoon icons
+@import "icons";
+
 @import "global";
 
 @import "header";
 
-article.post-entry {
-	.readmore:after {
-		content: " »";
-	}
-}
+@import "article";
