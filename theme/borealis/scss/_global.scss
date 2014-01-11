@@ -1,0 +1,23 @@
+// Global settings
+$text-color: #222;
+$background: #fffafa; // Lightened accent color
+
+$accent-color: #d8384a;
+$subaccent-color: #e40f3f;
+
+$alternate-color: #003349;
+$alternate-text-color: #fff;
+
+a, a:visited { color: $accent-color; }
+a:hover, a:active { color: lighten($accent-color, 10%); }
+
+body {
+	background: $background;
+	font-family: $serif-font;
+	font-weight: 400;
+	color: $text-color;
+}
+
+.row {
+	@include container($total-columns, $medium, $large);
+}

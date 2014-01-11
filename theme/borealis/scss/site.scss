@@ -7,66 +7,9 @@
 // Declare body font
 @import "fonts";
 
+@import "global";
 
-// Basic settings
-
-$text-color: #222;
-$accent-color: #d8384a;
-$subaccent-color: #e40f3f;
-$alternate-color: #003349;
-$alternate-text-color: #fff;
-$background: #fffafa; // Lightened accent color
-
-a, a:visited { color: $accent-color; }
-a:hover, a:active { color: lighten($accent-color, 10%); }
-
-body {
-	background: $background;
-	font-family: $serif-font;
-	font-weight: 400;
-	color: $text-color;
-}
-
-.row {
-	@include container($total-columns, $medium, $large);
-}
-
-body > header {
-	padding: 3em 0;
-
-	background: $alternate-color url('../images/cover.jpg') no-repeat center center;
-	color: $alternate-text-color;
-	
-	@import "compass/css3/background-size";
-	@include background-size(cover);
-
-	h1, h2 {
-		margin: 0;
-		padding: 0;
-		line-height: 1.75;
-	}
-
-	h1 { font-size: 2rem; }
-	h2 { font-size: 1.17rem; }
-
-	a, a:visited {
-		text-decoration: none;
-		color: $alternate-text-color;
-	}
-
-	a:hover, a:active { color: lighten($alternate-color, 80%); }
-
-	nav {
-		margin-top: 1.5em;
-
-		ul {
-			@import "compass/typography/lists/horizontal-list";
-			@include horizontal-list(0.5em);
-
-			.active a { color: $alternate-text-color; }
-		}
-	}
-}
+@import "header";
 
 article.post-entry {
 	.readmore:after {

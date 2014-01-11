@@ -1,0 +1,35 @@
+body > header {
+	padding: 3em 0;
+
+	background: $alternate-color url('../images/cover.jpg') no-repeat center center;
+	color: $alternate-text-color;
+	
+	@import "compass/css3/background-size";
+	@include background-size(cover);
+
+	h1, h2 {
+		margin: 0;
+		padding: 0;
+		line-height: 1.75;
+	}
+
+	h1 { font-size: 2rem; }
+	h2 { font-size: 1.17rem; }
+
+	a, a:visited {
+		text-decoration: none;
+		color: $alternate-text-color;
+	}
+
+	a:hover, a:active { color: lighten($alternate-color, 80%); }
+	.active a { color: $alternate-text-color; }
+
+	nav {
+		margin-top: 1.5em;
+
+		ul {
+			@import "compass/typography/lists/horizontal-list";
+			@include horizontal-list(0.5em);
+		}
+	}
+}
