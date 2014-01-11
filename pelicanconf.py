@@ -38,6 +38,11 @@ AUTHORS_URL = 'author/'
 AUTHORS_SAVE_AS = False
 
 STATIC_PATHS = ['images', 'extras']
+EXTRA_PATH_METADATA = {
+	'extras/CNAME': {'path': 'CNAME'},
+	'extras/favicon.png': {'path': 'favicon.png'},
+	'extras/robots.txt': {'path': 'robots.txt'},
+}
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
