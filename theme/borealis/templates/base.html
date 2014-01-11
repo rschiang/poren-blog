@@ -27,14 +27,13 @@
 
 <body>
 {% include 'github.html' %}
-
-<div class="page">
-	<header>
-		<div class="logo">
-			<h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
-			{% if SITESUBTITLE %}<h2>{{ SITESUBTITLE }}</h2>{% endif %}
-		</div>
-		<nav><ul>
+<header>
+	<div class="row">
+		<h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
+		{% if SITESUBTITLE %}<h2>{{ SITESUBTITLE }}</h2>{% endif %}
+	</div>
+	<nav class="row">
+		<ul>
 		{% for title, link in MENUITEMS %}
 		    <li><a href="{{ link }}">{{ title }}</a></li>
 		{% endfor %}
@@ -48,8 +47,11 @@
 		    <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
 		{% endfor %}
 		{% endif %}
-		</ul></nav>
-	</header>
+		</ul>
+	</nav>
+</header>
+<div class="page">
+	<div class="row">
 	{% block content %}
 	{% endblock %}
 	<section class="extras">
@@ -80,12 +82,13 @@
 			</ul>
 		</div><!-- /.social -->
 	{% endif %}
-	</section><!-- /#extras -->
-
-	<footer>
-	   © {{ AUTHOR }} {{ COPYTEXT }}
-	</footer><!-- /#contentinfo -->
+	</section>
 </div>
+<footer>
+	<div class="row">
+		© {{ AUTHOR }} {{ COPYTEXT }}
+	</div>
+</footer>
 
 {% include 'analytics.html' %}
 {% include 'piwik.html' %}

@@ -7,45 +7,39 @@
 // Declare body font
 @import "fonts";
 
+
+// Basic settings
+
 $text-color: #222;
 $accent-color: #d8384a;
 $subaccent-color: #e40f3f;
+$background: #fffafa; // Lightened accent color
 
 a, a:visited { color: $accent-color; }
 a:hover, a:active { color: lighten($accent-color, 10%); }
 
-.page {
-	@include container($total-columns, $medium, $large);
-
+body {
+	background: $background;
 	font-family: $serif-font;
 	font-weight: 400;
-
-	header, footer { clear: both; }
+	color: $text-color;
 }
 
-.page > header {
-	@include span-row;
-	padding: 1em 0;
+.row {
+	@include container($total-columns, $medium, $large);
+}
 
-	.logo {
-		@include span-columns-fluid(4, 7);
-	}
+body > header {
 
 	nav {
-		@include span-columns-fluid(4 omega, 5 omega);
 		ul {
 			@import "compass/typography/lists/inline-block-list";
 			@include inline-block-list;
 			
-			li { width: 25%; }
-
-			a {
-				display: block;
-				width: 100%;
+			li {
 				font-size: 1.17rem;	// heading 3
-				text-align: center;
-				text-decoration: none;
 			}
+			a { text-decoration: none; }
 
 			.active a { color: $text-color; }
 		}
