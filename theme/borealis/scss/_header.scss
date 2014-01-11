@@ -7,6 +7,15 @@ body > header {
 	@import "compass/css3/background-size";
 	@include background-size(cover);
 
+	a, a:visited {
+		text-decoration: none;
+		color: $alternate-text-color;
+	}
+
+	a:hover, a:active {
+		color: lighten($alternate-color, 80%);
+	}
+
 	h1, h2 {
 		margin: 0;
 		padding: 0;
@@ -16,20 +25,27 @@ body > header {
 	h1 { font-size: 2rem; }
 	h2 { font-size: 1.17rem; }
 
-	a, a:visited {
-		text-decoration: none;
-		color: $alternate-text-color;
-	}
-
-	a:hover, a:active { color: lighten($alternate-color, 80%); }
-	.active a { color: $alternate-text-color; }
-
 	nav {
 		margin-top: 1.5em;
 
 		ul {
 			@import "compass/typography/lists/horizontal-list";
 			@include horizontal-list(0.5em);
+		}
+
+		a, a:visited {
+			color: lighten($alternate-color, 80%);
+			opacity: 0.75;
+		}
+
+		a:hover, a:active {
+			color: lighten($alternate-color, 90%);
+			opacity: 0.9;
+		}
+
+		.active a {
+			color: $alternate-text-color;
+			opacity: 1;
 		}
 	}
 }
