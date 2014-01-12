@@ -5,18 +5,18 @@
 article.post-entry {
 	padding: $line-rhythm 0;
 
-	.date-header {
-		@include aligned-margin(1, 1rem, 1);
-		line-height: 1;
-	}
-
-	.entry-title {
-		//
-	}
-
 	.readmore:after {
 		content: " »";
 	}
+}
+
+.date-header {
+	@include aligned-margin(1, 1rem, 1);
+	line-height: 1;
+}
+
+.entry-title {
+	//
 }
 
 .entry-content {

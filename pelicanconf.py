@@ -52,7 +52,8 @@ TRANSLATION_FEED_ATOM = None
 # Blogroll
 MENUITEMS = (
 	('部落格', 'http://blog.poren.tw'),
-	('封存', 'http://blog.poren.tw/archives/'),
+	('筆記本', 'http://blog.poren.tw/category/'),
+	('晷跡', 'http://blog.poren.tw/archives/'),
 	('漫遊檔案', 'http://poren.tw'),
 )
 

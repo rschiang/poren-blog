@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content_title %}分類{% endblock %}
+{% block content %}
+<h1 class="page-title">分類</h1>
+<section class="content">
+	<article class="entry-content">
+		<ul>
+		{%- for category, articles in categories|sort %}
+			<li><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a> ({{ articles|count }})</li>
+		{% endfor %}
+		</ul>
+	</article>
+</section>
+{% endblock %}
