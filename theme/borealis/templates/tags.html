@@ -1,15 +1,11 @@
 {% extends "base.html" %}
-
-{% block title %}{{ SITENAME }} - 標籤{% endblock %}
-
+{% block content_title %}標籤{% endblock %}
 {% block content %}
-
 <section id="content" class="body">
-    <h1>{{ SITENAME }}的標籤</h1>
+    <h1>標籤</h1>
 
     {%- for tag, articles in tags|sort %}
         <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a> ({{ articles|count }})</li>
     {% endfor %}
 </section>
-
 {% endblock %}

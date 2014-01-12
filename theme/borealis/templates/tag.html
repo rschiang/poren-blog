@@ -1,2 +1,6 @@
 {% extends "index.html" %}
-{% block title %}{{ SITENAME }} - {{ tag }}{% endblock %}
+{% block content_title %}{{ tag }}{% endblock %}
+{% block content %}
+<h1 class="page-title filter">有「{{ tag }}」標籤的文章</h3>
+{{ super() }}
+{% endblock %}

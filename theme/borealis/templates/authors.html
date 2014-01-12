@@ -1,15 +1,11 @@
 {% extends "base.html" %}
-
-{% block title %}{{ SITENAME }} - 作者{% endblock %}
-
+{% block content_title %}作者{% endblock %}
 {% block content %}
-
-<section id="content" class="body">
-    <h1>{{ SITENAME }}上的作者</h1>
+<section class="content">
+    <h1>作者</h1>
 
     {%- for author, articles in authors|sort %}
         <li><a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a> ({{ articles|count }})</li>
     {% endfor %}
 </section>
-
 {% endblock %}

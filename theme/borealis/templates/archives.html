@@ -1,7 +1,8 @@
 {% extends "base.html" %}
+{% block content_title %}封存的文章{% endblock %}
 {% block content %}
-<section id="content" class="body">
-<h1>{{ SITENAME }}的封存文章</h1>
+<section class="content">
+<h1>封存的文章</h1>
 
 <dl>
 {% for article in dates %}

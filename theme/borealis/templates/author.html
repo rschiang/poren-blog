@@ -1,2 +1,6 @@
 {% extends "index.html" %}
-{% block title %}{{ SITENAME }} - {{ author }}{% endblock %}
+{% block content_title %}{{ author }}{% endblock %}
+{% block content %}
+<h1 class="page-title filter">由 {{ author }} 發表的文章</h3>
+{{ super() }}
+{% endblock %}

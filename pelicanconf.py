@@ -33,7 +33,7 @@ TAG_SAVE_AS = 'tag/{slug}/index.html'
 TAGS_URL = 'tag/'
 TAGS_SAVE_AS = 'tag/index.html'
 AUTHOR_URL = 'author/{slug}/'
-AUTHOR_SAVE_AS = False # 'author/{slug}/index.html'
+AUTHOR_SAVE_AS = 'author/{slug}/index.html'
 AUTHORS_URL = 'author/'
 AUTHORS_SAVE_AS = False
 
