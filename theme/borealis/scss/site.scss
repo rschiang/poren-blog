@@ -10,6 +10,12 @@
 // Use IcoMoon icons
 @import "icons";
 
+// Compass dependencies
+@import "compass/css3/background-size";
+@import "compass/typography/links";
+@import "compass/typography/lists";
+
+// Theme-specific files
 @import "global";
 
 @import "header";

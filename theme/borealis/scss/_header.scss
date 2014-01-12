@@ -4,7 +4,6 @@ body > header {
 	background: $alternate-color url('../images/cover.jpg') no-repeat center center;
 	color: $alternate-text-color;
 	
-	@import "compass/css3/background-size";
 	@include background-size(cover);
 
 	a, a:visited {
@@ -26,13 +25,12 @@ body > header {
 	}
 
 	h1 { font-size: 2rem; }
-	h2 { font-size: 1.17rem; }
+	h2 { font-size: 1.125rem; }
 
 	nav {
-		margin-top: 1.5em;
+		margin-top: 1.75em;
 
 		ul {
-			@import "compass/typography/lists/horizontal-list";
 			@include horizontal-list(0.5em);
 		}
 

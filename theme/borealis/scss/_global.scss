@@ -5,11 +5,27 @@ $background: #fffafa; // Lightened accent color
 $accent-color: #d8384a;
 $subaccent-color: #e40f3f;
 
+$secondary-color: #999090;
+
 $alternate-color: #003349;
 $alternate-text-color: #fff;
 
-a, a:visited { color: $accent-color; }
-a:hover, a:active { color: lighten($accent-color, 10%); }
+
+// Anchors
+@mixin colored-link($color, $highlight: false) {
+	a, a:visited { color: $color; }
+	@if type-of($highlight) == color {
+		a:hover, a:active { color: $highlight; }
+	}
+	@else if type-of($highlight) == number {
+		a:hover, a:active { color: lighten($color, $highlight); }
+	}
+}
+
+@include colored-link($accent-color, 10%);
+
+
+// Layout
 
 body {
 	background: $background;
@@ -21,6 +37,10 @@ body {
 .row {
 	@include container($total-columns, $medium, $large);
 }
+
+
+
+// Typography
 
 $h1-size: 2rem;
 $h2-size: 1.5rem;

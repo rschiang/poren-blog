@@ -4,7 +4,7 @@
 		{% if article.author %}
 		<a class="entry-author url" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
 		{% endif %}
-		@ <span class="time">{{ article.date|strftime('%H:%M') }}</span>
+		發表於 <span class="time">{{ article.date|strftime('%H:%M') }}</span>
 	</li>
 	<li class="category">
 		<a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
