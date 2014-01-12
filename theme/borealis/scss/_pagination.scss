@@ -25,7 +25,7 @@ $paginator-margin: 0.375em;
 			}
 
 			&:hover a, a:focus {
-				background: darken($background, 10%);
+				background: darken($background, 5%);
 			}
 		}
 
@@ -37,6 +37,12 @@ $paginator-margin: 0.375em;
 
 			&:hover a, a:focus {
 				background: $accent-color;
+			}
+		}
+
+		li.unavailable {
+			&:hover a, a:focus {
+				background: transparent;
 			}
 		}
 	}
