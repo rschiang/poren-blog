@@ -53,42 +53,32 @@
 </header>
 <div class="page">
 	<div class="row">
-	{% block content %}
-	{% endblock %}
-	<section class="extras">
-	{% if LINKS %}
-		<div class="blogroll">
-			<h2>交換連結</h2>
-			<ul>
-			{% for name, link in LINKS %}
-				<li><a href="{{ link }}">{{ name }}</a></li>
-			{% endfor %}
-			</ul>
-		</div><!-- /.blogroll -->
-	{% endif %}
-	{% if SOCIAL or FEED_ALL_ATOM or FEED_ALL_RSS %}
-		<div class="social">
-			<h2>社群網絡</h2>
-			<ul>
-				{% if FEED_ALL_ATOM %}
-				<li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate">Atom Feed</a></li>
-				{% endif %}
-				{% if FEED_ALL_RSS %}
-				<li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate">RSS Feed</a></li>
-				{% endif %}
-
-			{% for name, link in SOCIAL %}
-				<li><a href="{{ link }}">{{ name }}</a></li>
-			{% endfor %}
-			</ul>
-		</div><!-- /.social -->
-	{% endif %}
-	</section>
+		{% block content %}
+		{% endblock %}
+	</div>
 </div>
 <footer>
-	<div class="row">
-		© {{ AUTHOR }} {{ COPYTEXT }}
-	</div>
+	<address class="row">
+		<div class="copytext">
+			{% include 'copytext.html' %}
+		</div>
+		<ul class="social">
+			{% if LINKS %}
+			{% for name, link in LINKS %}
+			<li class="link"><a href="{{ link }}">{{ name }}</a></li>
+			{% endfor %}
+			{% endif %}
+			{% if FEED_ALL_ATOM %}
+			<li class="feed"><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="Atom Feed"></a></li>
+			{% endif %}
+			{% if FEED_ALL_RSS %}
+			<li class="feed"><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="RSS Feed"></a></li>
+			{% endif %}
+			{% for name, link in SOCIAL %}
+			<li class="{{ lower(name) }}"><a href="{{ link }}" title="{{ name }}"></a></li>
+			{% endfor %}
+		</ul>
+	</address>
 </footer>
 
 {% include 'analytics.html' %}

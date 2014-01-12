@@ -1,5 +1,5 @@
 body > header {
-	padding: 3em 0;
+	padding: ($line-rhythm * 1.5) 0;
 
 	background: $alternate-color url('../images/cover.jpg') no-repeat center center;
 	color: $alternate-text-color;
@@ -48,5 +48,7 @@ body > header {
 			color: $alternate-text-color;
 			opacity: 1;
 		}
+
+		a.feed { @include use-icon('源'); }
 	}
 }

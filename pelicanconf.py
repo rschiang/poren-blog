@@ -53,7 +53,7 @@ TRANSLATION_FEED_ATOM = None
 MENUITEMS = (
 	('部落格', 'http://blog.poren.tw'),
 	('封存', 'http://blog.poren.tw/archives/'),
-	('關於我', 'http://poren.tw'),
+	('漫遊檔案', 'http://poren.tw'),
 )
 
 DEFAULT_PAGINATION = 5
