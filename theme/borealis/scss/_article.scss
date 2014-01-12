@@ -12,6 +12,21 @@ article.post-entry {
 		//
 	}
 
+	.entry-meta {
+		color: lighten($accent-color, 20%);
+
+		ul {	
+			@import "compass/typography/lists/horizontal-list";
+			@include horizontal-list;
+		}
+
+		.info { @include use-icon('鐘'); }
+		.category { @include use-icon('庫'); }
+		.tag { @include use-icon('籤'); }
+		.link { @include use-icon('鏈'); }
+		.translation { @include use-icon('語'); }
+	}
+
 	.readmore:after {
 		content: " »";
 	}

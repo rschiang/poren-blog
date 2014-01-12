@@ -1,8 +1,8 @@
 {% macro translations_for(article) %}
 {% if article.translations %}
 翻譯版本：
-    {% for translation in article.translations %}
-        <a href="{{ SITEURL }}/{{ translation.url }}">{{ translation.lang }}</a>
-    {% endfor %}
+	<ul>{% for translation in article.translations %}
+		<li><a href="{{ SITEURL }}/{{ translation.url }}">{{ translation.lang }}</a></li>
+	{% endfor %}</ul>
 {% endif %}
 {% endmacro %}

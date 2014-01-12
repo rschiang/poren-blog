@@ -16,6 +16,10 @@
 	{% endif %}
 	{% include 'taglist.html' %}
 	{% import 'translations.html' as translations with context %}
-	{{ translations.translations_for(article) }}
+	{% if article.translations %}
+	<li class="translation">
+		{{ translations.translations_for(article) }}
+	</li>
+	{% endif %}
 </ul>
 </footer>
