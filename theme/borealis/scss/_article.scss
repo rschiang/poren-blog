@@ -15,9 +15,13 @@ article.post-entry {
 	}
 
 	.entry-content {
-		p, ul, ol {
+		p, ul, ol, blockquote {
 			margin: ($line-rhythm/2) 0;
 			line-height: 1.75;
+		}
+
+		hr {
+			margin: ($line-rhythm/2) 0;
 		}
 	}
 

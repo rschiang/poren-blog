@@ -1,17 +1,45 @@
 body > footer {
 	padding: ($line-rhythm * 1.5) 0;
 
+	color: darken($secondary-color, 10%);
+	@include colored-link(mix($accent-color, $secondary-color, 20%), 10%);
+
+	address {
+		font-size: 1rem;
+		font-style: normal;
+		font-weight: normal;
+		text-align: center;
+	}
+
 	.copytext {
-		@include span-columns-fluid(4, 6);
+		line-height: 1.75;
+
+		@include at-breakpoint($large) {
+			float: left;
+			text-align: left;
+		}
+
+		.cc { @include use-icon('C'); }
+		.cc-by { @include use-icon('B'); }
+		.cc-nc { @include use-icon('N'); }
+		.cc-sa { @include use-icon('S'); }
+		.cc-nd { @include use-icon('D'); }
+		.public { @include use-icon('P'); }
+		.cc0 { @include use-icon('0'); }
 	}
 
 	.social {
-		@include span-columns-fluid(4 omega, 6 omega);
-		@include horizontal-list(0.25rem, right);
+		margin: ($line-rhythm/2) 0;
 		height: $line-rhythm;
 
+		@include inline-block-list(0.25rem);
+		@include at-breakpoint($large) {
+			margin: 0;
+			@include horizontal-list(0.25rem, right);
+		}
+
 		li {
-			height: $line-rhythm;
+			margin: 0.125rem auto;
 			font-size: 1.5rem;
 			line-height: 1;
 		}
