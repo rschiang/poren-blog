@@ -65,17 +65,17 @@
 		<ul class="social">
 			{% if LINKS %}
 			{% for name, link in LINKS %}
-			<li class="link"><a href="{{ link }}">{{ name }}</a></li>
+			<li><a href="{{ link }}" class="link" title="{{ name }}">{{ name }}</a></li>
 			{% endfor %}
 			{% endif %}
 			{% if FEED_ALL_ATOM %}
-			<li class="feed"><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="Atom Feed"></a></li>
+			<li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" class="feed" title="Atom Feed"></a></li>
 			{% endif %}
 			{% if FEED_ALL_RSS %}
-			<li class="feed"><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="RSS Feed"></a></li>
+			<li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" class="feed" title="RSS Feed"></a></li>
 			{% endif %}
 			{% for name, link in SOCIAL %}
-			<li class="{{ lower(name) }}"><a href="{{ link }}" title="{{ name }}"></a></li>
+			<li><a href="{{ link }}" class="{{ name|lower|replace(' ', '') }}" title="{{ name }}"></a></li>
 			{% endfor %}
 		</ul>
 	</address>

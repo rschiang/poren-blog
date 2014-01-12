@@ -56,6 +56,13 @@ MENUITEMS = (
 	('漫遊檔案', 'http://poren.tw'),
 )
 
+SOCIAL = (
+	('GitHub', 'https://github.com/rschiang'),
+)
+
+
+# Misc
+
 DEFAULT_PAGINATION = 5
 PAGINATION_PATTERNS = (
 	(1, '{base_name}/', '{base_name}/index.html'),

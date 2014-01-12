@@ -48,7 +48,5 @@ body > header {
 			color: $alternate-text-color;
 			opacity: 1;
 		}
-
-		a.feed { @include use-icon('源'); }
 	}
 }
