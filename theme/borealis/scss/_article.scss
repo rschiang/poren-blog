@@ -1,5 +1,17 @@
 
 article.post-entry {
+	padding: 1.5rem 0;
+
+	.date-header {
+		margin: 0.375rem 0;
+		font-size: 1rem;
+		line-height: 1rem;
+	}
+
+	.entry-title {
+		//
+	}
+
 	.readmore:after {
 		content: " »";
 	}

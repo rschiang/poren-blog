@@ -4,7 +4,7 @@
 {% if articles %}
 <section class="content">
 	{% for article in articles_page.object_list %}
-	<article class="post-entry {% if loop.first and not articles_page.has_previous %}featured{% endif %}">
+	<article class="post-entry{% if loop.first and not articles_page.has_previous %}featured{% endif %}">
 		<h2 class="date-header">{{ article.locale_date }}</h2>
 		<h1 class="entry-title">
 			<a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark">{{ article.title }}</a>
