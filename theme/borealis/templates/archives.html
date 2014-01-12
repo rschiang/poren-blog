@@ -1,14 +1,15 @@
 {% extends "base.html" %}
 {% block content_title %}封存的文章{% endblock %}
 {% block content %}
+<h1 class="page-title">封存的文章</h1>
 <section class="content">
-<h1>封存的文章</h1>
-
-<dl>
-{% for article in dates %}
-    <dt>{{ article.locale_date }}</dt>
-    <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
-{% endfor %}
-</dl>
+	<article class="entry-content">
+		<dl>
+		{% for article in dates %}
+			<dt>{{ article.locale_date }}</dt>
+			<dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
+		{% endfor %}
+		</dl>
+	</article>
 </section>
 {% endblock %}

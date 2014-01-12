@@ -24,13 +24,15 @@
 	{% endif %}
 </section>
 {% else %}
+<h1 class="page-title">頁面</h1>
 <section class="content">
-	<h3>頁面</h3>
-	<ul>
-	{% for page in PAGES %}
-		<li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
-	{% endfor %}
-	</ul>
+	<article class="entry-content">
+		<ul>
+		{% for page in PAGES %}
+			<li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+		{% endfor %}
+		</ul>
+	</article>
 </section>
 {% endif %}
 {% endblock content %}

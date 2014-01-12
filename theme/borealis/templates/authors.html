@@ -1,11 +1,14 @@
 {% extends "base.html" %}
 {% block content_title %}作者{% endblock %}
 {% block content %}
+<h1 class="page-title">作者</h1>
 <section class="content">
-    <h1>作者</h1>
-
-    {%- for author, articles in authors|sort %}
-        <li><a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a> ({{ articles|count }})</li>
-    {% endfor %}
+	<article class="entry-content">
+		<ul>
+		{%- for author, articles in authors|sort %}
+			<li><a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a> ({{ articles|count }})</li>
+		{% endfor %}
+		</ul>
+	</article>
 </section>
 {% endblock %}
