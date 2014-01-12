@@ -25,6 +25,22 @@ article.post-entry {
 		line-height: 1.75;
 	}
 
+	q, blockquote, em {
+		font-family: $cursive-font;
+		font-style: normal;
+		font-weight: normal;
+	}
+
+	blockquote {
+		padding-left: 1em;
+		@include at-breakpoint($medium) { padding-left: 2em; }
+
+		color: lighten($text-color, 10%);
+
+		p, ul, ol, blockquote { margin: 0; }
+		em { font-family: $sans-font; }
+	}
+
 	hr {
 		margin: ($line-rhythm/2) 0;
 	}
