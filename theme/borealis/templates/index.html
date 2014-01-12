@@ -3,6 +3,9 @@
 {% block content %}
 {% if articles %}
 <section class="content">
+	{% if articles_page.number > 1 %}
+	{% include 'pagination.html' %}
+	{% endif %}
 	{% for article in articles_page.object_list %}
 	<article class="post-entry{% if loop.first and not articles_page.has_previous %}featured{% endif %}">
 		<h2 class="date-header">{{ article.locale_date }}</h2>
@@ -15,10 +18,10 @@
 		</div>
 		{% include 'article_meta.html' %}
 	</article>
-	{% if loop.last and (articles_page.has_previous() or articles_page.has_next) %}
-		{% include 'pagination.html' %}
-	{% endif %}
 	{% endfor %}
+	{% if articles_paginator.num_pages > 1 %}
+	{% include 'pagination.html' %}
+	{% endif %}
 </section>
 {% else %}
 <section class="content">

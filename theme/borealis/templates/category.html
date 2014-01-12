@@ -2,6 +2,5 @@
 {% block content_title %}{{ category }}{% endblock %}
 {% block content %}
 <h1 class="page-title filter">分類於「{{ category }}」的文章</h3>
-{% include 'pagination.html' %}
 {{ super() }}
 {% endblock %}
