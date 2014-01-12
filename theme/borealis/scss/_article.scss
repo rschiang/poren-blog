@@ -31,6 +31,11 @@ article.post-entry {
 		font-weight: normal;
 	}
 
+	strong, blockquote em {
+		font-family: $sans-font;
+		font-weight: bold;
+	}
+
 	blockquote {
 		padding-left: 1em;
 		@include at-breakpoint($medium) { padding-left: 2em; }
@@ -38,11 +43,22 @@ article.post-entry {
 		color: lighten($text-color, 10%);
 
 		p, ul, ol, blockquote { margin: 0; }
-		em { font-family: $sans-font; }
 	}
 
 	hr {
 		margin: ($line-rhythm/2) 0;
+	}
+
+	pre {
+		margin: ($line-rhythm/2) 0;
+	}
+
+	pre, code {
+		font-family: $mono-font;
+		font-style: normal;
+
+		b, strong { font-family: $mono-font; font-weight: bold; }
+		i, em { font-family: $mono-font; font-style: italic; }
 	}
 }
 
