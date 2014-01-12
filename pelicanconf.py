@@ -60,18 +60,24 @@ SOCIAL = (
 	('GitHub', 'https://github.com/rschiang'),
 )
 
+LICENSE = ['BY', 'SA']
 
-# Misc
-
+# Pagination
 DEFAULT_PAGINATION = 5
 PAGINATION_PATTERNS = (
 	(1, '{base_name}/', '{base_name}/index.html'),
 	(2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),
 )
 
+# Plugins
 THEME = 'theme/borealis'
 
-LICENSE = ['BY', 'SA']
+PLUGIN_PATH = '../source/pelican-plugins'
+PLUGINS = ['gravatar', 'summary']
+
+# Plugin configuration
+SUMMARY_BEGIN_MARKER = '<!-- summary -->'
+SUMMARY_END_MARKER = '<!-- more -->'
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
