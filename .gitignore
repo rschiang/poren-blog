@@ -7,3 +7,4 @@
 *.py[cod]
 output
 *.sass-cache
+*.sublime-*
