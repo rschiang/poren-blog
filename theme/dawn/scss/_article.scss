@@ -14,6 +14,10 @@ article.post-entry {
 		margin-top: -1px;
 	}
 
+	&.single {
+		margin-bottom: -$line-rhythm;
+	}
+
 	.readmore:after {
 		content: " »";
 	}
