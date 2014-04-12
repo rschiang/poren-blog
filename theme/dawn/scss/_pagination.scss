@@ -4,6 +4,9 @@ $paginator-margin: 0.375em;
 	text-align: center;
 	margin: $line-rhythm 0;
 
+	&:first-child { margin-bottom: 0; }
+	&:last-child { margin-top: 0; }
+
 	ul {
 		@include inline-block-list($paginator-margin);
 		height: $line-rhythm;

@@ -2,12 +2,12 @@
 	margin: $line-rhythm 0;
 }
 
+* + .content {
+	margin-top: -$line-rhythm;
+}
+
 article.post-entry {
 	padding: $line-rhythm 0;
-
-	.page-title+.content &:first-child {
-		padding-top: 0;
-	}
 
 	&+& {
 		border-top: $separator;
