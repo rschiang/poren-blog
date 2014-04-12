@@ -1,0 +1,25 @@
+// Fonts declaration
+$sans-font: "Helvetica Neue", Helvetica, Arial, "Heiti", sans-serif;
+$serif-font: Georgia, Times, "Times New Roman", "Songti", serif;
+$cursive-font: Georgia, Times, "Times New Roman", "Kaiti", cursive, "標楷體", serif;
+$mono-font: Consolas, Inconsolata, Monaco, Courier, monospace;
+
+@font-face {
+	font-family: "Heiti";
+	src: local("XinGothic-TC"), 
+	     local("Hiragino Sans GB"), local("Heiti TC"), local("Heiti SC"),
+	     local("Microsoft Jhenghei"), local("Microsoft Yahei"), 
+	     local("Droid Sans Fallback");
+}
+
+@font-face {
+	font-family: "Songti";
+	src: local(STSongti-TC-Regular), local("Songti TC"), local("Songti SC"),
+	     local(PMingLiU), local(SimSun);
+}
+
+@font-face {
+	font-family: "Kaiti";
+	src: local(STKaiTi-TC-Regular), local("Kaiti TC"), local("Kaiti SC"),
+	     local("標楷體"), local(DFKai-SB);
+}

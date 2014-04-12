@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content_title %}標籤{% endblock %}
+{% block content %}
+<h1 class="page-title">標籤</h1>
+<section class="content">
+	<article class="entry-content">
+		<ul>
+		{%- for tag, articles in tags|sort %}
+			<li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a> ({{ articles|count }})</li>
+		{% endfor %}
+		</ul>
+	</article>
+</section>
+{% endblock %}

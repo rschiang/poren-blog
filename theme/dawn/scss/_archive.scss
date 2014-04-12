@@ -1,0 +1,23 @@
+article.archive {
+	dt {
+		@include at-breakpoint($medium) {
+			float: left;
+		}
+
+		h1.year {
+			@include aligned-margin(2, $h2-size, 1.5);
+			margin-top: 0;
+		}
+	}
+
+	dd {
+		margin: 0;
+		@include at-breakpoint($medium) {
+			margin-left: 4rem;
+		}
+
+		ol {
+			@include no-bullets;
+		}
+	}
+}

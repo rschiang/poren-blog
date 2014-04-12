@@ -1,0 +1,8 @@
+{% if article.tags %}
+<li class="tags">
+	標籤：
+	<ul>{% for tag in article.tags %}
+		<li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>
+	{% endfor %}</ul>
+</li>
+{% endif %}

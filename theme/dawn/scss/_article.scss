@@ -1,0 +1,83 @@
+.page-title {
+	@include aligned-margin(3, $h1-size, 1.5);
+}
+
+article.post-entry {
+	padding: $line-rhythm 0;
+
+	.readmore:after {
+		content: " »";
+	}
+}
+
+.date-header {
+	@include aligned-margin(1, 1rem, 1);
+	line-height: 1;
+}
+
+.entry-title {
+	//
+}
+
+.entry-content {
+	p, ul, ol, blockquote {
+		margin: ($line-rhythm/2) 0;
+		line-height: 1.75;
+	}
+
+	q, blockquote, em {
+		font-family: $cursive-font;
+		font-style: normal;
+		font-weight: normal;
+	}
+
+	strong, blockquote em {
+		font-family: $sans-font;
+		font-weight: bold;
+	}
+
+	blockquote {
+		padding-left: 1em;
+		@include at-breakpoint($medium) { padding-left: 2em; }
+
+		color: lighten($text-color, 10%);
+
+		p, ul, ol, blockquote { margin: 0; }
+	}
+
+	hr {
+		margin: ($line-rhythm/2) 0;
+	}
+
+	pre {
+		margin: ($line-rhythm/2) 0;
+	}
+
+	pre, code {
+		font-family: $mono-font;
+		font-style: normal;
+
+		b, strong { font-family: $mono-font; font-weight: bold; }
+		i, em { font-family: $mono-font; font-style: italic; }
+	}
+}
+
+.entry-meta {
+	padding: $line-rhythm/2 0;
+	font-family: $sans-font;
+	color: $secondary-color;
+
+	a { @include hover-link; }
+	@include colored-link($secondary-color, 10%);
+
+	ul {
+		@include inline-block-list(0.25em);
+	}
+
+	.info { @include use-icon('鐘'); }
+	.category { @include use-icon('庫'); }
+	.tag { @include use-icon('籤'); }
+	.link { @include use-icon('鏈'); }
+	.translation { @include use-icon('語'); }
+}
+

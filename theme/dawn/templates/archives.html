@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content_title %}封存的文章{% endblock %}
+{% block content %}
+<h1 class="page-title">封存的文章</h1>
+<section class="archive">
+	<article class="archive entry-content">
+		<dl>
+		{% for group in dates|groupby('date.year')|sort(attribute='grouper', reverse=True) %}
+			<dt><h1 class="year">{{ group.grouper }}</h1></dt>
+			<dd><ol>
+			{% for article in group.list %}
+				<li>
+					<h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
+				</li>
+			{% endfor %}
+			</ol></dd>
+		{% endfor %}
+		</dl>
+	</article>
+</section>
+{% endblock %}

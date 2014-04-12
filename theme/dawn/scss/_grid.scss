@@ -1,0 +1,27 @@
+@import "susy";
+
+$total-columns: 6;
+$column-width: 4em;
+$gutter-width: 1em;
+$grid-padding: $gutter-width;
+
+$medium-width: 40em;
+$large-width: 64em;
+
+$medium-columns: 8;
+$large-columns: 12;
+
+$medium: $medium-width $medium-columns;
+$large: $large-width $large-columns;
+
+@mixin span-row {
+	@include span-columns($total-columns omega);
+	@include at-breakpoint($medium) { @include span-columns($medium-columns omega, $medium-columns); }
+	@include at-breakpoint($large) { @include span-columns($large-columns omega, $large-columns); }
+}
+
+@mixin span-columns-fluid($at-medium, $at-large) {
+	@include span-columns($total-columns);
+	@include at-breakpoint($medium) { @include span-columns($at-medium, $medium-columns); }
+	@include at-breakpoint($large) { @include span-columns($at-large, $large-columns); }
+}

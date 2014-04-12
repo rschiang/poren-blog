@@ -1,0 +1,49 @@
+$paginator-margin: 0.375em;
+
+.paginator {
+	text-align: center;
+	margin: $line-rhythm 0;
+
+	ul {
+		@include inline-block-list($paginator-margin);
+		height: $line-rhythm;
+
+		li {
+			height: $line-rhythm;
+			color: $text-color;
+
+			a {
+				display: block;
+				padding: 0 ($paginator-margin * 2);
+
+				line-height: 1.75;
+
+				color: $secondary-color;
+				text-decoration: none;
+
+				@include border-radius(0.25em);
+			}
+
+			&:hover a, a:focus {
+				background: darken($background, 5%);
+			}
+		}
+
+		li.current {
+			a {
+				background: $accent-color;
+				color: #fff;
+			}
+
+			&:hover a, a:focus {
+				background: $accent-color;
+			}
+		}
+
+		li.unavailable {
+			&:hover a, a:focus {
+				background: transparent;
+			}
+		}
+	}
+}

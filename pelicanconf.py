@@ -71,7 +71,7 @@ PAGINATION_PATTERNS = (
 )
 
 # Plugins
-THEME = 'theme/borealis'
+THEME = 'theme/dawn'
 
 PLUGIN_PATH = '../source/pelican-plugins'
 PLUGINS = ['gravatar', 'summary']
@@ -82,4 +82,3 @@ SUMMARY_END_MARKER = '<!-- more -->'
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
-
