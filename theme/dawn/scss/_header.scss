@@ -1,9 +1,11 @@
 body > header {
 	padding: ($line-rhythm * 1.5) 0;
 
-	background: $alternate-color url('../images/cover.jpg') no-repeat center center;
+	background: $alternate-color url('../images/cover.jpg') no-repeat right center;
 	color: $alternate-text-color;
-	
+
+	font-family: $sans-font;
+
 	@include background-size(cover);
 
 	a, a:visited {
@@ -19,33 +21,38 @@ body > header {
 		margin: 0;
 		padding: 0;
 
-		font-family: $sans-font;
 		font-weight: 600;
 		line-height: 1.75;
+		text-shadow: 0 .5px 5px rgba(0, 0, 0, .75);
 	}
 
-	h1 { font-size: 2rem; }
-	h2 { font-size: 1.125rem; }
+	h1 { font-size: 3rem; }
+	h2 { font-size: 1.5rem; }
+
+	@include at-breakpoint($large) {
+		padding: ($line-rhythm * 7.25) 0 ($line-rhythm * 2.25);
+	}
 
 	nav {
 		margin-top: 1.75em;
 
 		ul {
-			@include horizontal-list(0.5em);
+			@include horizontal-list(0.25em);
+		}
+
+		li+li:before {
+			content: '•';
+			padding-right: 0.5em;
+			opacity: .25;
 		}
 
 		a, a:visited {
 			color: lighten($alternate-color, 80%);
-			opacity: 0.75;
-		}
-
-		a:hover, a:active {
-			color: lighten($alternate-color, 90%);
 			opacity: 0.9;
 		}
 
-		.active a {
-			color: $alternate-text-color;
+		a:hover, a:active, .active a {
+			color: lighten($alternate-color, 90%);
 			opacity: 1;
 		}
 	}

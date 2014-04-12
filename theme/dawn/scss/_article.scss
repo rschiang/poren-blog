@@ -64,7 +64,6 @@ article.post-entry {
 
 .entry-meta {
 	padding: $line-rhythm/2 0;
-	font-family: $sans-font;
 	color: $secondary-color;
 
 	a { @include hover-link; }
@@ -80,4 +79,3 @@ article.post-entry {
 	.link { @include use-icon('鏈'); }
 	.translation { @include use-icon('語'); }
 }
-

@@ -1,14 +1,14 @@
 // Fonts declaration
-$sans-font: "Helvetica Neue", Helvetica, Arial, "Heiti", sans-serif;
+$sans-font: "Noto Sans", Ubuntu, Tahoma, "Heiti", sans-serif;
 $serif-font: Georgia, Times, "Times New Roman", "Songti", serif;
 $cursive-font: Georgia, Times, "Times New Roman", "Kaiti", cursive, "標楷體", serif;
 $mono-font: Consolas, Inconsolata, Monaco, Courier, monospace;
 
 @font-face {
 	font-family: "Heiti";
-	src: local("XinGothic-TC"), 
+	src: local("XinGothic-TC"),
 	     local("Hiragino Sans GB"), local("Heiti TC"), local("Heiti SC"),
-	     local("Microsoft Jhenghei"), local("Microsoft Yahei"), 
+	     local("Microsoft Jhenghei"), local("Microsoft Yahei"),
 	     local("Droid Sans Fallback");
 }
 
