@@ -8,13 +8,10 @@ body > header {
 
 	@include background-size(cover);
 
-	a, a:visited {
-		text-decoration: none;
-		color: $alternate-text-color;
-	}
-
-	a:hover, a:active {
-		color: lighten($alternate-color, 80%);
+	@include colored-link(transparentize($alternate-text-color, 0.25),
+	                      transparentize($alternate-text-color, 0.1));
+	.active, h1 {
+		@include colored-link($alternate-text-color, $alternate-text-color);
 	}
 
 	h1, h2 {
@@ -44,16 +41,6 @@ body > header {
 			content: '•';
 			padding-right: 0.5em;
 			opacity: .25;
-		}
-
-		a, a:visited {
-			color: lighten($alternate-color, 80%);
-			opacity: 0.9;
-		}
-
-		a:hover, a:active, .active a {
-			color: lighten($alternate-color, 90%);
-			opacity: 1;
 		}
 	}
 }

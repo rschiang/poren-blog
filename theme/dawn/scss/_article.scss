@@ -52,7 +52,6 @@ article.post-entry {
 	padding: $line-rhythm/2 0;
 	color: $secondary-color;
 
-	a { @include hover-link; }
 	@include colored-link($secondary-color, 10%);
 
 	ul {

@@ -23,6 +23,7 @@ $alternate-text-color: #fff;
 	}
 }
 
+a { @include hover-link; }
 @include colored-link($accent-color, 10%);
 
 
@@ -56,7 +57,7 @@ h1, h2, h3, h4, h5 {
 	font-weight: 600;
 	line-height: 1.5;
 
-	a { text-decoration: none; }
+	a:hover { text-decoration: none; }
 }
 
 @mixin aligned-margin($lines, $size, $line-height) {
