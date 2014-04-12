@@ -6,5 +6,6 @@
 *.out
 *.py[cod]
 output
+content
 *.sass-cache
 *.sublime-*
