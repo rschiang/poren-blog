@@ -19,6 +19,11 @@ body > footer {
 			text-align: left;
 		}
 
+		.icon:before {
+			vertical-align: text-bottom;
+			font-size: 1.15em;
+		}
+
 		.cc { @include use-icon('C'); }
 		.cc-by { @include use-icon('B'); }
 		.cc-nc { @include use-icon('N'); }
