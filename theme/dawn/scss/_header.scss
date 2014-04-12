@@ -11,7 +11,7 @@ body > header {
 	@include colored-link(transparentize($alternate-text-color, 0.25),
 	                      transparentize($alternate-text-color, 0.1));
 	.active, h1 {
-		@include colored-link($alternate-text-color, $alternate-text-color);
+		@include colored-link($alternate-text-color, 0%);
 	}
 
 	h1, h2 {

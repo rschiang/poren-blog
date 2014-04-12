@@ -2,7 +2,7 @@ body > footer {
 	padding: ($line-rhythm * 1.5) 0;
 
 	color: darken($secondary-color, 10%);
-	@include colored-link(mix($accent-color, $secondary-color, 20%), 10%);
+	@include colored-link(mix($accent-color, $secondary-color, 20%), -10%);
 
 	address {
 		font-size: 1rem;

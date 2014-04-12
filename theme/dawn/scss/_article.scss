@@ -25,7 +25,7 @@ article.post-entry {
 }
 
 .entry-title {
-	//
+	@include colored-link($accent-color, -5%);
 }
 
 .entry-content {
@@ -52,7 +52,7 @@ article.post-entry {
 	padding: $line-rhythm/2 0;
 	color: $secondary-color;
 
-	@include colored-link($secondary-color, 10%);
+	@include colored-link($secondary-color, -10%);
 
 	ul {
 		@include inline-block-list(0.25em);

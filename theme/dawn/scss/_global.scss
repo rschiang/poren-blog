@@ -19,12 +19,22 @@ $alternate-text-color: #fff;
 		a:hover, a:active { color: $highlight; }
 	}
 	@else if type-of($highlight) == number {
-		a:hover, a:active { color: lighten($color, $highlight); }
+		a:hover, a:active {
+			@if $highlight > 0 {
+				color: lighten($color, $highlight);
+			}
+			@else if $highlight < 0 {
+				color: darken($color, -$highlight);
+			}
+			@else {
+				color: $color;
+			}
+		}
 	}
 }
 
 a { @include hover-link; }
-@include colored-link($accent-color, 10%);
+@include colored-link($accent-color, -10%);
 
 
 // Layout
