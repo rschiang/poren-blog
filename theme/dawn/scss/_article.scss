@@ -10,7 +10,7 @@ article.post-entry {
 	}
 
 	&+& {
-		border-top: 1px solid rgba(0,0,0,0.2);
+		border-top: $separator;
 		margin-top: -1px;
 	}
 
@@ -29,20 +29,15 @@ article.post-entry {
 }
 
 .entry-content {
-	p, ul, ol, blockquote {
+	p, ul, ol, blockquote, hr, pre {
 		margin: ($line-rhythm/2) 0;
+
+		blockquote & {
+			margin: 0;
+		}
+	}
+	p, ul, ol, blockquote {
 		line-height: 1.75;
-	}
-
-	q, blockquote, em {
-		font-family: $cursive-font;
-		font-style: normal;
-		font-weight: normal;
-	}
-
-	strong, blockquote em {
-		font-family: $sans-font;
-		font-weight: bold;
 	}
 
 	blockquote {
@@ -50,24 +45,6 @@ article.post-entry {
 		@include at-breakpoint($medium) { padding-left: 2em; }
 
 		color: lighten($text-color, 10%);
-
-		p, ul, ol, blockquote { margin: 0; }
-	}
-
-	hr {
-		margin: ($line-rhythm/2) 0;
-	}
-
-	pre {
-		margin: ($line-rhythm/2) 0;
-	}
-
-	pre, code {
-		font-family: $mono-font;
-		font-style: normal;
-
-		b, strong { font-family: $mono-font; font-weight: bold; }
-		i, em { font-family: $mono-font; font-style: italic; }
 	}
 }
 

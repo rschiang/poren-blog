@@ -72,10 +72,29 @@ h4 { @include aligned-margin(2, $h4-size, 1.5); }
 h5 { @include aligned-margin(2, $h5-size, 1.5); }
 h6 { @include aligned-margin(2, $h6-size, 1.5); }
 
+q, blockquote, em {
+	font-family: $cursive-font;
+	font-style: normal;
+	font-weight: normal;
+}
+
+strong, blockquote em {
+	font-family: $sans-font;
+	font-weight: bold;
+}
+
+pre, code {
+	font-family: $mono-font;
+	font-style: normal;
+
+	b, strong { font-family: $mono-font; font-weight: bold; }
+	i, em { font-family: $mono-font; font-style: italic; }
+}
+
 
 // Separator
 
-$separator: darken($background, 15%) 1px solid;
+$separator: rgba(0, 0, 0, .2) 1px solid;
 
 hr {
 	border: 0;
