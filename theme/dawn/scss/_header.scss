@@ -1,7 +1,7 @@
 body > header {
 	padding: ($line-rhythm * 1.5) 0;
 
-	background: $alternate-color url('../images/cover.jpg') no-repeat right center;
+	background: url('../images/cover.jpg') no-repeat right center;
 	color: $alternate-text-color;
 
 	font-family: $sans-font;

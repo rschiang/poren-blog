@@ -1,25 +1,12 @@
 // Fonts declaration
-$sans-font: "Noto Sans", Ubuntu, Tahoma, "Heiti", sans-serif;
-$serif-font: Georgia, Times, "Times New Roman", "Songti", serif;
-$cursive-font: Georgia, Times, "Times New Roman", "Kaiti", cursive, "標楷體", serif;
-$mono-font: Consolas, Inconsolata, Monaco, Courier, monospace;
+$sans-font: "Noto Sans", Ubuntu, Tahoma,
+            "XinGothic-TC", "Hiragino Sans GB", "Heiti TC", "Heiti SC",
+						"Microsoft Jhenghei", "Microsoft Yahei", sans-serif;
 
-@font-face {
-	font-family: "Heiti";
-	src: local("XinGothic-TC"),
-	     local("Hiragino Sans GB"), local("Heiti TC"), local("Heiti SC"),
-	     local("Microsoft Jhenghei"), local("Microsoft Yahei"),
-	     local("Droid Sans Fallback");
-}
+$serif-font: Optima, "Book Antiqua", Century,
+             "Songti TC", "Songti SC", serif;
 
-@font-face {
-	font-family: "Songti";
-	src: local(STSongti-TC-Regular), local("Songti TC"), local("Songti SC"),
-	     local(PMingLiU), local(SimSun);
-}
+$cursive-font: Baskerville, "Baskerville Old Face", Georgia, cursive,
+               "Kaiti TC", "Kaiti SC", "標楷體", "DFKai-SB", serif;
 
-@font-face {
-	font-family: "Kaiti";
-	src: local(STKaiTi-TC-Regular), local("Kaiti TC"), local("Kaiti SC"),
-	     local("標楷體"), local(DFKai-SB);
-}
+$mono-font: Menlo, Inconsolata, Monaco, Consolas, Courier, monospace;
