@@ -5,13 +5,14 @@
 	<title>{% block title %}{{ SITENAME }}: {% block content_title %}{% endblock %}{% endblock %}</title>
 
 	{% if AUTHOR %}
-	<meta name="author" content="{{ AUTHOR }}">
+	<meta name="author" content="{{ AUTHOR }}" />
 	{% endif %}
 	{% if SITESUBTITLE %}
-	<meta name="description" content="{{ SITESUBTITLE }}">
+	<meta name="description" content="{{ SITESUBTITLE }}" />
 	{% endif %}
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<link rel="shortcut icon" href="{{ SITEURL }}/favicon.png">
+	<link rel="shortcut icon" href="{{ SITEURL }}/favicon.png" />
 	<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/site.css" />
 
 	{% if FEED_ALL_ATOM %}
