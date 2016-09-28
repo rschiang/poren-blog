@@ -73,7 +73,7 @@ PAGINATION_PATTERNS = (
 # Plugins
 THEME = 'theme/dawn'
 
-PLUGIN_PATH = '../source/pelican-plugins'
+PLUGIN_PATHS = ['../pelican-plugins']
 PLUGINS = ['gravatar', 'summary']
 
 # Plugin configuration
