@@ -87,6 +87,6 @@ def publish(c):
 @task
 def gh_pages(c):
     """Publish to GitHub Pages"""
-    rebuild(c)
+    preview(c)
     c.run("ghp-import -b {github_pages_branch} {deploy_path} -p".format(
         **CONFIG))
