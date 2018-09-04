@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>任任的藍色虛空</title><link href="http://blog.poren.tw/" rel="alternate"></link><link href="http://blog.poren.tw/category/liu-guang-sui-yi/atom.xml" rel="self"></link><id>http://blog.poren.tw/</id><updated>2013-10-17T16:08:00+08:00</updated><entry><title>翻譯：如何辦個更多元的技術研討會</title><link href="http://blog.poren.tw/2013/10/17/translation-how-to-create-a-more-diverse-tech-conference/" rel="alternate"></link><published>2013-10-17T16:08:00+08:00</published><updated>2013-10-17T16:08:00+08:00</updated><author><name>Poren Chiang</name></author><id>tag:blog.poren.tw,2013-10-17:2013/10/17/translation-how-to-create-a-more-diverse-tech-conference/</id><summary type="html">&lt;p&gt;原文：&lt;a href="http://continuousdelivery.com/2013/09/how-we-got-40-female-speakers-at-flowcon/"&gt;How To Create A More Diverse Tech Conference&lt;/a&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>任任的藍色虛空 - 流光隨譯</title><link href="https://blog.poren.tw/" rel="alternate"></link><link href="https://blog.poren.tw/category/liu-guang-sui-yi/atom.xml" rel="self"></link><id>https://blog.poren.tw/</id><updated>2013-10-17T16:08:00+08:00</updated><entry><title>翻譯：如何辦個更多元的技術研討會</title><link href="https://blog.poren.tw/2013/10/17/translation-how-to-create-a-more-diverse-tech-conference/" rel="alternate"></link><published>2013-10-17T16:08:00+08:00</published><updated>2013-10-17T16:08:00+08:00</updated><author><name>Poren Chiang</name></author><id>tag:blog.poren.tw,2013-10-17:/2013/10/17/translation-how-to-create-a-more-diverse-tech-conference/</id><summary type="html">&lt;p&gt;原文：&lt;a href="http://continuousdelivery.com/2013/09/how-we-got-40-female-speakers-at-flowcon/"&gt;How To Create A More Diverse Tech Conference&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;技術研討會、甚至資訊領域的族群比例，近年來才逐漸為國內社群所重視；然而目前鮮有研討會將性別、族裔等族群比例，明確納入議程安排考量。在此同時，11 月初的 FlowCon 2013 卻成功募集到了 40% 以上的女性講者。他們是怎麼做到的，又有哪些地方值得我們效法？讓我們看看 ThoughtWorks 首席顧問 Jez Humble 怎麼說。&lt;/em&gt;&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;原文：&lt;a href="http://continuousdelivery.com/2013/09/how-we-got-40-female-speakers-at-flowcon/"&gt;How To Create A More Diverse Tech Conference&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;技術研討會、甚至資訊領域的族群比例，近年來才逐漸為國內社群所重視；然而目前鮮有研討會將性別、族裔等族群比例，明確納入議程安排考量。在此同時，11 月初的 FlowCon 2013 卻成功募集到了 40% 以上的女性講者。他們是怎麼做到的，又有哪些地方值得我們效法？讓我們看看 ThoughtWorks 首席顧問 Jez Humble 怎麼說。&lt;/em&gt;&lt;/p&gt;
 
 
-&lt;hr /&gt;
-&lt;p&gt;如何邀請到有料的女性講者？有熟人提醒我，在研討會結束前，似乎不適合討論這個問題。然而 RubyConf 發生「&lt;a href="https://twitter.com/shanley/status/380179040545406976"&gt;清一色男性講者&lt;/a&gt;&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;」的醜聞，以及隨之而來、尼安德塔人等級的相關討論，讓我忍不住動筆了。或許有些衝動，但以下是我們如何使 &lt;a href="http://flowcon.org/"&gt;FlowCon&lt;/a&gt; 的&lt;a href="http://flowcon.org/flowcon-sanfran-2013/speakers/"&gt;講者&lt;/a&gt;超過四成的比例是女性。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;如何邀請到有料的女性講者？有熟人提醒我，在研討會結束前，似乎不適合討論這個問題。然而 RubyConf 發生「&lt;a href="https://twitter.com/shanley/status/380179040545406976"&gt;清一色男性講者&lt;/a&gt;&lt;sup id="fnref-1"&gt;&lt;a class="footnote-ref" href="#fn-1"&gt;1&lt;/a&gt;&lt;/sup&gt;」的醜聞，以及隨之而來、尼安德塔人等級的相關討論，讓我忍不住動筆了。或許有些衝動，但以下是我們如何使 &lt;a href="http://flowcon.org/"&gt;FlowCon&lt;/a&gt; 的&lt;a href="http://flowcon.org/flowcon-sanfran-2013/speakers/"&gt;講者&lt;/a&gt;超過四成的比例是女性。&lt;/p&gt;
 &lt;h2&gt;第零步，在乎結果&lt;/h2&gt;
 &lt;p&gt;當 John Esser 邀請我舉辦一個關於持續產出 (continuous delivery)、精實軟體開發 (lean software development) 的研討會時，我思索了好一陣子。我曾協辦過其他研討會 (&lt;a href="http://qconsf.com/sf2012/sf2012/"&gt;QCon SF 2012&lt;/a&gt;)，而那真的滿辛苦的，所以我想先確定我有正確的動機。&lt;/p&gt;
 &lt;p&gt;我不喜歡技術研討會的其中一個原因，正是因為我總是被其他白人直男包圍（無關個人，一些我最要好的朋友也是白人直男。）這提醒了我們，由於眾多社經因素影響，參與技術研討會對&lt;a href="http://whatever.scalzi.com/2012/05/15/straight-white-male-the-lowest-difficulty-setting-there-is/"&gt;白人直男而言總是比較容易&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;我想辦個社群組成如我所願的研討會，而非只是單純反映社群成員的實際分布。因此 FlowCon 議程委員會訂立的&lt;a href="http://flowcon.org/"&gt;四種價值&lt;/a&gt;中，有著這麼一項：「多樣性：我們相信技術社群（因而包含研討會的講者與會眾）的分佈，應當反映我們的顧客、以及廣大世界的人們所呈現的樣態。」&lt;/p&gt;
 &lt;p&gt;將多樣性列於議程委員會的四大價值，有兩項原因。首先，沒有多樣性，我們無法有效率的透過科技改變世界。想知道為什麼？看看 Ashe Dryden 在「&lt;a href="http://flowcon.org/flowcon-sanfran-2013/presentation/Programming%20Diversity"&gt;多元的社群與工作場所能夠產出更好的產品&lt;/a&gt;」議程中怎麼說。再來，我喜歡在 &lt;a href="http://www.thoughtworks.com/"&gt;ThoughtWorks&lt;/a&gt; 工作的其中一個主要原因，正因公司的&lt;a href="http://www.thoughtworks.com/about-us"&gt;三大宗旨&lt;/a&gt;之一要求我們「熱情倡導社經正義。」IT 領域少有女性，反映的是這世界直到今日，仍無可避免的存有社會、經濟上的不公義。&lt;/p&gt;
-&lt;p&gt;協辦 &lt;a href="http://continuousdelivery.com/2013/09/how-we-got-40-female-speakers-at-flowcon/qconsf.com"&gt;QCon SF&lt;/a&gt; 帶給我的經驗，是必須訂定研討會的確切任務目標：這能時常提醒你為什麼在辦研討會，以及對研討會而言，什麼才是最重要的；否則就任由籌備者的潛在偏見左右了。如同我們在 RubyConf 看到的，不能只是引入匿名投稿的「&lt;a href="https://twitter.com/shanley/status/380186471174393856"&gt;奇技淫巧&lt;/a&gt;」&lt;sup id="fnref:3"&gt;&lt;a class="footnote-ref" href="#fn:3" rel="footnote"&gt;3&lt;/a&gt;&lt;/sup&gt;，然後指望它某種程度上能解決問題。議程委員會的每個人，必須實質的對結果在乎，否則他們不會投入足夠的工作量使其成真。&lt;/p&gt;
+&lt;p&gt;協辦 &lt;a href="http://continuousdelivery.com/2013/09/how-we-got-40-female-speakers-at-flowcon/qconsf.com"&gt;QCon SF&lt;/a&gt; 帶給我的經驗，是必須訂定研討會的確切任務目標：這能時常提醒你為什麼在辦研討會，以及對研討會而言，什麼才是最重要的；否則就任由籌備者的潛在偏見左右了。如同我們在 RubyConf 看到的，不能只是引入匿名投稿的「&lt;a href="https://twitter.com/shanley/status/380186471174393856"&gt;奇技淫巧&lt;/a&gt;」&lt;sup id="fnref-3"&gt;&lt;a class="footnote-ref" href="#fn-3"&gt;3&lt;/a&gt;&lt;/sup&gt;，然後指望它某種程度上能解決問題。議程委員會的每個人，必須實質的對結果在乎，否則他們不會投入足夠的工作量使其成真。&lt;/p&gt;
 &lt;p&gt;一旦達成，剩下的步驟也就沒那麼難了。&lt;/p&gt;
 &lt;h2&gt;第一步，確認議程委員會符合任務目標&lt;/h2&gt;
 &lt;p&gt;一但我對研討會的任務目標有了主意，我便聯絡了幾位我認為與我理念相近的人。很幸運的，&lt;a href="http://flowcon.org/flowcon-sanfran-2013/speaker/Elisabeth+Hendrickson"&gt;Elizabeth Hendrickson&lt;/a&gt;、&lt;a href="http://flowcon.org/flowcon-sanfran-2013/speaker/Lane+Halley"&gt;Lane Halley&lt;/a&gt; 與 &lt;a href="http://flowcon.org/flowcon-sanfran-2013/speaker/Gene+Kim"&gt;Gene Kim&lt;/a&gt; 答應加入 &lt;a href="http://flowcon.org/flowcon-sanfran-2013/speaker/John+Esser"&gt;John Esser&lt;/a&gt; 與我，共同參與議程委員會。&lt;/p&gt;
@@ -31,21 +33,21 @@
 &lt;p&gt;第三，我們帶來的不全然是好消息；尤其我們只有一名非白人講者。我對此舉雙手投降——在議程委員會裡，我們並沒有明確設定非白人講者的目標比例，當問題浮現的時候（第三步）已經太遲了。這顯示了步驟零到二多重要：如果我們下次再辦 FlowCon，我們會做得更好。&lt;/p&gt;
 &lt;p&gt;同一時間，&lt;a href="http://flowcon.org/flowcon-sanfran-2013/schedule/index.jsp"&gt;看看議程&lt;/a&gt;，然後&lt;a href="https://secure.trifork.com/flowcon-sanfran-2013/registration/registration.jsp?promotionCode=humb50"&gt;透過這連結&lt;/a&gt;以九折報名 FlowCon。如果要超過一天的研討會才能慫恿你蒞臨舊金山，&lt;a href="http://lanyrd.com/2013/balancedteam/"&gt;接下來兩天 Balanced Team 也在辦研討會&lt;/a&gt;。&lt;/p&gt;
 &lt;h2&gt;結語&lt;/h2&gt;
-&lt;p&gt;&lt;img alt="「我看不見種族差異，我是個好人。」翻譯：我將用我的特權地位，以否定那些沒有白人權利的人，同時抹除他們的個人與文化歷史。" src="http://engl165gs.files.wordpress.com/2013/05/colorblind-thought.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="「我看不見種族差異，我是個好人。」翻譯：我將用我的特權地位，以否定那些沒有白人權利的人，同時抹除他們的個人與文化歷史。" src="http://engl165gs.files.wordpress.com/2013/05/colorblind-thought.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;在這場討論中還有一種常用的&lt;a href="http://geekfeminism.wikia.com/wiki/Silencing"&gt;消音戰術&lt;/a&gt;：引起大家對研討會多樣性的關注，本身就是性別主義或種族主義的一種。左邊的漫畫貼切表達了這被誤導的多嚴重（你也能看看&lt;a href="http://www.sociologyinfocus.com/2012/01/30/im-not-racist-im-colorblind/"&gt;關於「色盲」與種族主義的幾篇優良文章&lt;/a&gt;。）&lt;/p&gt;
 &lt;p&gt;你能在 Geek Feminism &lt;a href="http://geekfeminism.org/"&gt;部落格&lt;/a&gt;與&lt;a href="http://geekfeminism.wikia.com/"&gt;維基&lt;/a&gt;找到成噸的有用資訊，以及改善技術領域女性處境的建議。你也可以透過 &lt;a href="https://twitter.com/CallbackWomen"&gt;@CallbackWomen&lt;/a&gt; 與 &lt;a href="https://twitter.com/DevChix"&gt;@DevChix&lt;/a&gt; Twitter 帳號散佈 CFP 消息。Ashe Dryden 也寫了篇關於籌備更具多樣性研討會的&lt;a href="http://ashedryden.com/blog/so-you-want-to-put-on-a-diverse-inclusive-conference"&gt;優秀文章&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;籌備一個對女性友善的研討會，立定&lt;a href="http://gotocon.com/flowcon-sanfran-2013/anti-harassment-policy/"&gt;防治騷擾原則&lt;/a&gt;是很重要的。看看實際需要使用防治騷擾原則（觸發警報）的&lt;a href="http://www.maryrobinettekowal.com/journal/on-sexual-harassment-at-conventions-elise-matheson-speaks-out/"&gt;這位女性的經歷&lt;/a&gt;。&lt;/p&gt;
 &lt;div class="footnote"&gt;
-&lt;hr /&gt;
+&lt;hr&gt;
 &lt;ol&gt;
-&lt;li id="fn:1"&gt;
-&lt;p&gt;原文 “binders full of men”，源自美國總統候選人羅姆尼之言 “&lt;a href="http://en.wikipedia.org/wiki/Binders_full_of_women"&gt;binders full of women&lt;/a&gt;”。&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;li id="fn-1"&gt;
+&lt;p&gt;原文 “binders full of men”，源自美國總統候選人羅姆尼之言 “&lt;a href="http://en.wikipedia.org/wiki/Binders_full_of_women"&gt;binders full of women&lt;/a&gt;”。&amp;#160;&lt;a class="footnote-backref" href="#fnref-1" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id="fn:2"&gt;
-&lt;p&gt;原文 “kick-ass”。&amp;#160;&lt;a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;li id="fn-2"&gt;
+&lt;p&gt;原文 “kick-ass”。&amp;#160;&lt;a class="footnote-backref" href="#fnref-2" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id="fn:3"&gt;
-&lt;p&gt;原文 “one weird trick”。&amp;#160;&lt;a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;li id="fn-3"&gt;
+&lt;p&gt;原文 “one weird trick”。&amp;#160;&lt;a class="footnote-backref" href="#fnref-3" title="Jump back to footnote 3 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</summary></entry></feed>
+&lt;/div&gt;</content></entry></feed>
