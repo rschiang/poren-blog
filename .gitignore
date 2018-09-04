@@ -5,7 +5,9 @@
 *.swp
 *.out
 *.py[cod]
+__pycache__/
 output
 content
 *.sass-cache
 *.sublime-*
+venv/

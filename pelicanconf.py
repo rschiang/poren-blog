@@ -10,7 +10,7 @@ SITEURL = ''
 TIMEZONE = 'Asia/Taipei'
 DEFAULT_DATE_FORMAT = '%Y/%m/%d'
 
-DEFAULT_LANG = u'zh'
+DEFAULT_LANG = u'zh-Hant'
 LOCALE = 'zh_TW'
 
 DISPLAY_CATEGORIES_ON_MENU = False
@@ -31,17 +31,20 @@ ARCHIVES_SAVE_AS = 'archives/index.html'
 TAG_URL = 'tag/{slug}/'
 TAG_SAVE_AS = 'tag/{slug}/index.html'
 TAGS_URL = 'tag/'
-TAGS_SAVE_AS = 'tag/index.html'
+TAGS_SAVE_AS = False
 AUTHOR_URL = 'author/{slug}/'
-AUTHOR_SAVE_AS = 'author/{slug}/index.html'
+AUTHOR_SAVE_AS = False
 AUTHORS_URL = 'author/'
 AUTHORS_SAVE_AS = False
 
+PATH = 'content'
+OUTPUT_PATH = 'output'
+
 STATIC_PATHS = ['images', 'extras']
 EXTRA_PATH_METADATA = {
-	'extras/CNAME': {'path': 'CNAME'},
-	'extras/favicon.png': {'path': 'favicon.png'},
-	'extras/robots.txt': {'path': 'robots.txt'},
+    'extras/CNAME': {'path': 'CNAME'},
+    'extras/favicon.png': {'path': 'favicon.png'},
+    'extras/robots.txt': {'path': 'robots.txt'},
 }
 
 # Feed generation is usually not desired when developing
@@ -51,14 +54,14 @@ TRANSLATION_FEED_ATOM = None
 
 # Blogroll
 MENUITEMS = (
-	('部落格', 'http://blog.poren.tw'),
-	('筆記本', 'http://blog.poren.tw/category/'),
-	('晷跡', 'http://blog.poren.tw/archives/'),
-	('漫遊檔案', 'http://poren.tw'),
+    ('部落格', 'https://blog.poren.tw'),
+    ('筆記本', 'https://blog.poren.tw/category/'),
+    ('晷跡', 'https://blog.poren.tw/archives/'),
+    ('漫遊檔案', 'https://poren.tw'),
 )
 
 SOCIAL = (
-	('GitHub', 'https://github.com/rschiang'),
+    ('GitHub', 'https://github.com/rschiang'),
 )
 
 LICENSE = ['BY', 'SA']
@@ -66,8 +69,8 @@ LICENSE = ['BY', 'SA']
 # Pagination
 DEFAULT_PAGINATION = 5
 PAGINATION_PATTERNS = (
-	(1, '{base_name}/', '{base_name}/index.html'),
-	(2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),
+    (1, '{base_name}/', '{base_name}/index.html'),
+    (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),
 )
 
 # Plugins
@@ -81,4 +84,4 @@ SUMMARY_BEGIN_MARKER = '<!-- summary -->'
 SUMMARY_END_MARKER = '<!-- more -->'
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+# RELATIVE_URLS = True
