@@ -2,7 +2,7 @@
 <html lang="{{ DEFAULT_LANG }}">
 <head>
 	<meta charset="utf-8" />
-	<title>{% block title %}{{ SITENAME }}: {% block content_title %}{% endblock %}{% endblock %}</title>
+	<title>{% block title %}{{ SITENAME }}：{% block content_title %}{% endblock %}{% endblock %}</title>
 
 	{% if AUTHOR %}
 	<meta name="author" content="{{ AUTHOR }}" />
@@ -21,10 +21,6 @@
 	{% if FEED_ALL_RSS %}
 	<link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
 	{% endif %}
-
-	<!--[if IE]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
 </head>
 
 <body>
@@ -83,7 +79,6 @@
 </footer>
 
 {% include 'analytics.html' %}
-{% include 'piwik.html' %}
 {% include 'disqus_script.html' %}
 </body>
 </html>

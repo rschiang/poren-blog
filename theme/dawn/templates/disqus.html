@@ -2,12 +2,15 @@
 <h2>留言</h2>
 <div id="disqus_thread"></div>
 <script type="text/javascript">
-	var disqus_identifier = "{{ article.url }}";
-	var disqus_url = "{{ SITEURL }}/{{ article.url }}";
+	var disqus_config = function() {
+		this.page.identifier = "{{ article.url }}";
+		this.page.url = "{{ SITEURL }}/{{ article.url }}";
+	};
 	(function() {
-	var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	dsq.src = 'http://{{ DISQUS_SITENAME }}.disqus.com/embed.js';
-	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	var d = document; var s = d.createElement('script');
+	s.setAttribute('data-timestamp', +new Date()); s.async = true;
+	s.src = 'https://{{ DISQUS_SITENAME }}.disqus.com/embed.js';
+	(d.head || d.body).appendChild(s);
 	})();
 </script>
 {% endif %}
