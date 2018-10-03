@@ -1,11 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import os
 
 AUTHOR = u'Poren Chiang'
 SITENAME = u'任任的藍色虛空'
 SITESUBTITLE = '漫思於粼粼極光'
-SITEURL = ''
+SITEURL = 'file:///' + os.path.join(os.path.dirname(os.path.abspath(__file__)), 'output')
 
 TIMEZONE = 'Asia/Taipei'
 DEFAULT_DATE_FORMAT = '%Y/%m/%d'
