@@ -1,17 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
-from __future__ import unicode_literals
 import os
 
-AUTHOR = u'Poren Chiang'
-SITENAME = u'任任的藍色虛空'
+AUTHOR = 'Poren Chiang'
+SITENAME = '任任的藍色虛空'
 SITESUBTITLE = '漫思於粼粼極光'
-SITEURL = 'file:///' + os.path.join(os.path.dirname(os.path.abspath(__file__)), 'output')
+# SITEURL
 
 TIMEZONE = 'Asia/Taipei'
 DEFAULT_DATE_FORMAT = '%Y/%m/%d'
 
-DEFAULT_LANG = u'zh-Hant'
+DEFAULT_LANG = 'zh-Hant'
 LOCALE = 'zh_TW'
 
 DISPLAY_CATEGORIES_ON_MENU = False
@@ -73,6 +72,17 @@ PAGINATION_PATTERNS = (
     (1, '{base_name}/', '{base_name}/index.html'),
     (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),
 )
+
+# Markdown
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+        'markdown_del_ins': {},
+    },
+    'output_format': 'html5',
+}
 
 # Plugins
 THEME = 'theme/dawn'

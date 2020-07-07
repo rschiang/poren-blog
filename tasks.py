@@ -3,13 +3,7 @@
 import os
 import shutil
 import sys
-try:
-    import socketserver
-except ImportError:
-    import SocketServer as socketserver
-
 from invoke import task
-from pelican.server import ComplexHTTPRequestHandler
 
 CONFIG = {
     # Local path configuration (can be absolute or relative to tasks.py)
@@ -51,17 +45,7 @@ def regenerate(c):
 @task
 def serve(c):
     """Serve site at http://localhost:8000/"""
-    os.chdir(CONFIG['deploy_path'])
-
-    class AddressReuseTCPServer(socketserver.TCPServer):
-        allow_reuse_address = True
-
-    server = AddressReuseTCPServer(
-        ('', CONFIG['port']),
-        ComplexHTTPRequestHandler)
-
-    sys.stderr.write('Serving on port {port} ...\n'.format(**CONFIG))
-    server.serve_forever()
+    c.run('pelican -l -s pelicanconf.py')
 
 @task
 def reserve(c):
