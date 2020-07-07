@@ -50,6 +50,11 @@ article.post-entry {
 
 		color: lighten($text-color, 10%);
 	}
+
+	.footnote a em {
+		font-family: inherit;
+		font-style: italic; /* workaround */
+	}
 }
 
 .entry-meta {

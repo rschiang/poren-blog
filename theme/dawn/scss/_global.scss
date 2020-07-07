@@ -102,6 +102,10 @@ pre, code {
 	i, em { font-family: $mono-font; font-style: italic; }
 }
 
+cite[title] {
+	font-style: normal;
+	font-variant: small-caps;
+}
 
 // Separator
 

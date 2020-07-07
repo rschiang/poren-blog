@@ -1,12 +1,12 @@
 // Fonts declaration
-$sans-font: "Noto Sans", Ubuntu, Tahoma,
-            "PingFang TC", "Source Han Sans TC", "Noto Sans CJK TC",
+$sans-font: "Noto Sans", Ubuntu, system-ui,
+            "PingFang TC", "Source Han Sans TC", "Noto Sans TC",
             "Microsoft Jhenghei", sans-serif;
 
 $serif-font: Optima, "Book Antiqua", Century,
-             "Songti TC", "Songti SC", serif;
+             "Songti TC", "Source Han Serif TC", "Noto Serif TC", serif;
 
 $cursive-font: Baskerville, "Baskerville Old Face", Georgia, cursive,
                "Kaiti TC", "標楷體", "DFKai-SB", serif;
 
-$mono-font: Menlo, Inconsolata, Monaco, Consolas, Courier, monospace;
+$mono-font: "SF Mono", Menlo, Inconsolata, Consolas, Courier, monospace;
