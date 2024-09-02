@@ -9,6 +9,7 @@ packages = []
 python = "^3.12"
 pelican = {extras = ["markdown"], version = "^4.8.0"}
 invoke = "^2.0.0"
+ghp-import = "^2.1.0"
 markdown-del-ins = "^1.0.0"
 minchin-pelican-plugins-summary = "^1.2.1"
 
