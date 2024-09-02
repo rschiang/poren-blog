@@ -95,6 +95,7 @@ PLUGINS = [
 SUMMARY_BEGIN_MARKER = '<!-- summary -->'
 SUMMARY_END_MARKER = '<!-- more -->'
 SUMMARY_MAX_LENGTH = None
+SUMMARY_USE_FIRST_PARAGRAPH = True
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
