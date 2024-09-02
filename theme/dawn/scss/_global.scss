@@ -115,3 +115,9 @@ hr {
 	border: 0;
 	border-bottom: $separator;
 }
+
+// Language-specific settings
+
+q:lang(zh) {
+    quotes: "\300c" "\300d" "\300e" "\300f";
+}

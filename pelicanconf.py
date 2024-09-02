@@ -94,6 +94,7 @@ PLUGINS = [
 # Plugin configuration
 SUMMARY_BEGIN_MARKER = '<!-- summary -->'
 SUMMARY_END_MARKER = '<!-- more -->'
+SUMMARY_MAX_LENGTH = None
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
