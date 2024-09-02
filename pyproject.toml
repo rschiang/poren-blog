@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "poren-blog"
+version = "1.0.0"
+description = "blog.poren.tw"
+authors = ["Poren Chiang <poren@poren.tw>"]
+packages = []
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pelican = {extras = ["markdown"], version = "^4.8.0"}
+invoke = "^2.0.0"
+markdown-del-ins = "^1.0.0"
+minchin-pelican-plugins-summary = "^1.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

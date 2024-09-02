@@ -87,8 +87,9 @@ MARKDOWN = {
 # Plugins
 THEME = 'theme/dawn'
 
-PLUGIN_PATHS = ['../pelican-plugins']
-PLUGINS = ['gravatar', 'summary']
+PLUGINS = [
+    'minchin.pelican.plugins.summary',
+]
 
 # Plugin configuration
 SUMMARY_BEGIN_MARKER = '<!-- summary -->'
